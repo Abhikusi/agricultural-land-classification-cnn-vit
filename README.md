@@ -27,21 +27,44 @@ The main objective is to classify land-use imagery into meaningful categories us
 
 ```text
 .
-├── config/                     # local configuration files (ignored in git)
-├── data/                       # dataset directory (ignored in git)
-├── logs/                       # training logs and runtime artifacts (ignored in git)
-├── models/                     # saved models and notebooks for experiments
-├── sample-notebook/            # local notebook scratch files (ignored in git)
-├── services/                  # reusable services and helper modules
-├── tests/                     # project tests
-├── utils/                     # utilities and helper functions
-├── .gitignore                 # repository ignore rules
-├── environment.yml            # Conda environment configuration
-├── main.py                    # entry-point script
+├── .gitignore                 # git ignore rules
 ├── README.md                  # project documentation
-├── requirements.txt           # Python package dependencies
-├── setup.py                   # package/setup definition
-└── venv/                      # local virtual environment (ignored in git)
+├── config/
+│   ├── __pycache__/
+│   ├── config.yaml
+│   └── config_loader.py
+├── environment.yml            # Conda environment setup
+├── logs/
+│   └── agent.log
+├── main.py                    # project entry point
+├── models/
+│   ├── .DS_Store
+│   ├── 1-Data-Loading/
+│   │   └── memort-vs-generator-data-loading.ipynb
+│   ├── 2-Data-Loading-And-Augmentation/
+│   │   └── .DS_Store
+│   ├── 3-Convolutional-Neural-Networks/
+│   │   └── .DS_Store
+│   └── 4-CNN-Vision-Transformer-Integration/
+│       └── .DS_Store
+├── requirements.txt           # Python dependencies
+├── sample-notebook/
+│   └── memory-vs-generator-based-data-loading.ipynb
+├── services/
+│   ├── __init__.py
+│   └── translator.py
+├── setup.py
+├── tests/
+│   ├── __init__.py
+│   └── test_agent.py
+├── utils/
+│   ├── __init__.py
+│   └── helpers.py
+└── venv/
+    ├── .DS_Store
+    ├── bin/
+    ├── lib/
+    └── pyvenv.cfg
 ```
 
 ## Technology Stack
@@ -133,5 +156,5 @@ This workspace is structured as a research and experimentation project for image
 
 ## Author
 
-- Author: A Singh
-- Email: asingh@email.com
+- Author: Abhishek Singh
+- Email: abhikusi73@gmail.com
