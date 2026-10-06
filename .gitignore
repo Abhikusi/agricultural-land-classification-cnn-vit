@@ -1,0 +1,56 @@
+# Python environment
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+
+# Editor and OS files
+.DS_Store
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Local notebooks and scratch artifacts
+sample-notebook/
+logs/
+config/
+
+# Dataset and local scratch artifacts
+# Large dataset files should stay out of Git.
+data/
+
+# Keep the model folder structure in Git, but ignore the large artifact files.
+!models/
+!models/**/
+models/**/*.DS_Store
+*.keras
+*.h5
+*.pth
+*.pt
+*.bin
+*.ckpt
+*.onnx
+
+**/.DS_Store
+
+# Test and tooling cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage/
+
+# Packaging build output
+build/
+dist/
+*.egg-info/
